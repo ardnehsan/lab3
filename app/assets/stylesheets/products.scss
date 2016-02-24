@@ -1,0 +1,116 @@
+// Place all the styles related to the welcome controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+.title {
+  background: #2E3E4F;
+  color: white;
+  text-align: center;
+  font-weight: lighter;
+  padding-top: 10px;
+  padding-bottom: 15px;
+}
+
+.welcome img{
+  position:relative;
+  width: 1030px;
+  height: 450px;
+  top: 10px;
+  z-index: -1;
+
+}
+
+.button{
+  color: white;
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  padding: 5px;
+  background-color: #367CB8;
+  border: 1px solid black;
+}
+
+.welcome h1 span{
+  position: absolute;
+  right: 10px;
+  z-index: 2;
+  top: 30%;
+}
+.welcome h2 span{
+  position: absolute;
+  right: 10px;
+  z-index: 2;
+  top: 40%;
+}
+
+//list
+.box{
+  position: absolute;
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  font-size: 10px;
+}
+
+
+.content {
+  margin: 10px;
+  justify-content: space-between;
+   border: 1px solid black;
+   width: 200px;
+   height: 300px;
+   bottom: 10%;
+   text-align: center;
+   font-size: 8px;
+   font-family: sans-serif;
+
+}
+
+.content img{
+  top: 20%;
+  width: 175px;
+  justify-content: center;
+}
+
+.info-button {
+  position: relative;
+
+  border: 1px solid black;
+  padding: 5px;
+  text-decoration: none;
+}
+
+//view
+
+.bigcontainer{
+  display: flex;
+
+}
+
+.view_img img{
+  width: 500px;
+
+}
+
+.specs{
+  width: 400px;
+  font-family: sans-serif;
+  font-style: normal;
+}
+
+.specs h1{
+  background-color: #F2C40D;
+}
+
+.specs h2{
+  background-color: #BFF6EB;
+}
+
+.specs h3{
+  background-color: #EEEEEE;
+}
+
+.specs p{
+  background-color: white;
+}

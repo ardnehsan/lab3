@@ -1,0 +1,26 @@
+<%= link_to "Home", root_path %>
+
+<div class="box">
+
+  <% @products.each do |product| %>
+  <div class="content">
+    <h1><%= product.item %></h1>
+    <h2>
+      <% if product.condition == "good" %>
+          <%= number_to_currency product.price.to_i * 0.9 %> CLEARANCE!!!
+
+      <% elsif product.condition == "average" %>
+            <%= number_to_currency product.price.to_i * 0.8 %>  CLEARANCE!!!
+      <% else %>
+            <%= number_to_currency product.price %>
+      <% end %>
+    </h2>
+  <a href="/products/<%= product.pid %>">
+    <%= image_tag "#{product.img_file}.jpg"%>
+  </a>
+    <%= link_to "More Info", "/products/#{product.pid}", :class=>"info-button" %>
+  </div>
+
+
+    <% end %>
+</div>
